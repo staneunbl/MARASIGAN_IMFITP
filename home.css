@@ -1,0 +1,698 @@
+
+html,body {
+	margin: 0;
+	padding: 0;
+	overflow-x: hidden;
+}
+
+body {
+	margin: 0px;
+	margin-top: 0px;
+	align-items: center;
+	width: 100%;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+	display: flex;
+	position: fixed;
+	height: 135px;
+	width: 100%;
+	background-color: rgb(8,9,19);
+	margin: 0px;
+	top: 0px;
+	left: 0px;
+	right: 0px;
+	padding: 0px;
+	padding-left: 80px;
+	padding-top: 2px;
+}
+
+.header-images {
+	display: block;
+	position: flex;
+	height: 90px;
+	padding: 23px;
+	background-position: left;
+	align-items: center;
+	float: left;
+	padding: 23px 0px 45px 9px;
+}
+
+#clockdate {
+	display: fixed;
+	position: flex;
+	background-position: right;
+	padding: 25px 22px 22px 700px;
+	float: right;
+	align-items: right;
+	line-height: 9px;
+	margin-right: 23px;
+}
+
+.clockdate-wrapper {
+	background-color: #333;
+	padding: 10px;
+	max-width: 350px;
+	width: 100%;
+	text-align: center;
+	border-radius: 5px;
+}
+
+#clock {
+	background-color: #333;
+	font-family: sans-serif;
+	font-size: 48px;
+	text-shadow: 0px 0px 1px #fff;
+	color: #fff;
+	padding: 5px;
+}
+
+#clock span {
+	color: #888;
+	text-shadow: 0px 0px 1px #333;
+	font-size: 38px;
+	position: relative;
+	top: -5px;
+	left: 10px;
+}
+
+#date {
+	letter-spacing: 2px;
+	font-size: 14px;
+	font-family: arial,sans-serif;
+	color: #fff;
+}
+
+.sidebar {
+	height: 100%;
+	width: 0;
+	position: fixed;
+	z-index: 1;
+	top: 130px;
+	left: 0;
+	background-color: rgb(8,9,19);
+	overflow-x: hidden;
+	transition: 0.5s;
+	padding-top: 40px;
+}
+
+.nav-links {
+	list-style: none;
+	position: relative;
+	padding: 3px 25px 25px 30px;
+	margin-top: 0px;
+	align-items: center;
+}
+
+.nav-links li a {
+	display: flex;
+	color: #fff;
+	text-decoration: none;
+	align-items: center;
+	padding: 0px;
+}
+
+.nav-links li a i {
+	font-size: 25.8px;
+	margin-right: 15px;
+}
+
+.nav-links li {
+	padding: 0px;
+}
+
+.nav-links #ddp {
+	font-size: 12.2px;
+}
+
+.active1 {
+	background: #F9F6EE;
+	width: 100%;
+	height: 53px;
+	position: absolute;
+	left: 0;
+	right: 8;
+	top: 2.5%;
+	border-radius: 4px;
+	display: none;
+	transition: top 0.1s;
+}
+
+.nav-links li:hover a {
+	color: rgb(8,9,19);
+	transition: 0.5s;
+}
+
+.sidebar a {
+	text-decoration: none;
+	color: #818181;
+	display: block;
+	transition: 0.3s;
+	padding: 0px;
+}
+
+.sidebar a:hover {
+	color: #f1f1f1;
+}
+
+.sidebar .closebtn {
+	position: absolute;
+	top: 0;
+	right: 25px;
+	font-size: 24px;
+	margin-left: 50px;
+	color: white;
+}
+
+.openbtn {
+	font-size: 20px;
+	cursor: pointer;
+	background-color: #111;
+	color: white;
+	padding: 10px 15px;
+	border: none;
+}
+
+.openbtn:hover {
+	background-color: #444;
+}
+
+#sideBtn {
+	transition: margin-left .5s;
+	position: fixed;
+	margin: 0;
+	top: 135px;
+}
+
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+	.sidebar {
+		padding-top: 15px;
+	}
+
+	.sidebar a {
+		font-size: 23px;
+	}
+}
+
+section {
+	border: 2px solid black;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	background-size: cover;
+	background-position: center center;
+	background-repeat: no repeat;
+	background-attachment: fixed;
+	padding: 50px 100px 100px 100px;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	margin: auto;
+}
+
+#Philippines1 {
+	padding-top: 225px;
+	background-color: #7393B3;
+	background-image: linear-gradient(rgba(255,255,255,0.40),
+	rgba(255,255,255,0.40)), url("tourist.jpg");
+	padding-bottom: 145px;
+}
+
+#Philippines1 h1 {
+	background-color: #191970;
+	color: white;
+	padding: 10px;
+	text-align: center;
+}
+
+div.gallery {
+	margin: 5px;
+	border: 3.5px solid #191970;
+	float: center;
+	width: 288px;
+	display: inline-table;
+}
+
+div.gallery:hover {
+	border: 3.5px solid black;
+}
+
+div.gallery img {
+	width: 100%;
+	height: auto;
+}
+
+div.desc {
+	padding: 12px 12px 15px 12px;
+	text-align: center;
+	background-color: white;
+}
+
+div.desc1 {
+	padding: 15px;
+	text-align: center;
+	font-size: 14.5px;
+	background-color: white;
+}
+
+#Philippines2 {
+	background-color: #F4BB44;
+}
+
+#Philippines2 img {
+	width: 100px;
+}
+
+#Philippines2 h1 {
+	background-color: #FFFAA0;
+	color: black;
+	padding: 4px;
+	text-align: center;
+	border: 3px solid black;
+}
+
+#Philippines2 td {
+	background-color: #FFFAA0;
+	color: black;
+	padding: 8px;
+	text-align: justify;
+}
+
+#Philippines3 {
+	background-color: #4F7942;
+}
+
+
+#Philippines3 h1 {
+	background-color: #93C572;
+	color: black;
+	padding: 8px;
+	text-align: center;
+	border: 3px solid black;
+}
+
+#Philippines3 td {
+	background-color: #93C572;
+	color: black;
+	padding: 8px;
+	text-align: center;
+	text-align: justify;
+}
+
+img {
+	vertical-align: middle;
+}
+
+#Philippines4 {
+	background-color: #2C3E50;
+}
+
+#Philippines4 h1 {
+	background-color: #808B96;
+	color: black;
+	padding: 8px;
+	text-align: center;
+	border: 3px solid black;
+}
+
+#Philippines4 td {
+	background-color: #808B96;
+	color: black;
+	padding: 8px;
+	text-align: center;
+	text-align: justify;
+}
+
+#Philippines5 {
+	background-color: #6495ED;
+}
+
+#Philippines5 h1 {
+	background-color: #A7C7E7;
+	color: black;
+	padding: 8px;
+	text-align: center;
+	border: 3px solid black;
+}
+
+#Philippines5 td {
+	background-color: #A7C7E7;
+	color: black;
+	padding: 8px;
+	text-align: center;
+	text-align: justify;
+}
+
+body {
+	background: #e6e6e6;
+}
+
+#slider {
+	width: 80%;
+	margin: 0 auto;
+	position: relative;
+	overflow: hidden;
+	box-shadow: 2px 5px 10px rgba(0,0,0,0.4);
+	;
+}
+
+.slide {
+	width: 100%;
+	display: none;
+	animation-name: fade;
+	animation-duration: 1s;
+}
+
+@keyframes fade {
+	from {
+		opacity: 0.5;
+	}
+
+	to {
+		opacity: 1;
+	}
+}
+
+.controls {
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	font-size: 1.5em;
+	padding: 15px 10px;
+	border-radius: 5px;
+}
+
+.controls:hover {
+	background: white;
+	transition: 0.3s;
+}
+
+.controls:active {
+	color: grey;
+}
+
+#left-arrow {
+	left: 10px;
+}
+
+#right-arrow {
+	right: 10px;
+}
+
+#dots-con {
+	text-align: center;
+	padding-top: 10px;
+}
+
+.dot {
+	display: inline-block;
+	background: grey;
+	padding: 8px;
+	border-radius: 50%;
+	margin: 10px 5px;
+}
+
+.active {
+	background: crimson;
+}
+
+@media (max-width:576px) {
+	#slider {
+		width: 100%;
+	}
+
+	.controls {
+		font-size: 1em;
+	}
+
+	#dots-con {
+		display: none;
+	}
+}
+
+#Philippines6 {
+	padding-top: 95px;
+	background-image: linear-gradient(rgba(255,255,255,0.40),
+	rgba(255,255,255,0.40)), url("tourist1.jpg");
+	padding-bottom: 125px;
+}
+
+#Philippines6 h1 {
+	background-color: #191970;
+	color: white;
+	padding: 10px;
+	text-align: center;
+}
+
+div.gallery1 {
+	margin: 5px;
+	border: 3.5px solid #191970;
+	float: center;
+	width: 365px;
+	display: inline-table;
+}
+
+div.gallery1:hover {
+	border: 3.5px solid black;
+}
+
+div.gallery1 img {
+	width: 100%;
+	height: auto;
+}
+
+#Philippines7 {
+	background-image: linear-gradient(rgba(255,255,255,0.40),
+	rgba(255,255,255,0.40)), url("luzon.jpg");
+	padding: 50px 100px 100px 100px;
+}
+
+#Philippines7 h1 {
+	background-color: #191970;
+	color: white;
+	padding: 10px;
+	text-align: center;
+}
+
+div.gallery2 {
+	margin: 5px;
+	border: 3.5px solid #191970;
+	float: center;
+	width: 315px;
+	display: inline-table;
+}
+
+div.gallery2:hover {
+	border: 3.5px solid black;
+}
+
+div.gallery2 img {
+	width: 100%;
+	height: auto;
+}
+
+#Philippines8 {
+	background-image: linear-gradient(rgba(255,255,255,0.40),
+	rgba(255,255,255,0.40)), url("visayas.jpg");
+	padding: 50px 100px 100px 100px;
+}
+
+#Philippines8 h1 {
+	background-color: #191970;
+	color: white;
+	padding: 10px;
+	text-align: center;
+}
+
+div.gallery3 {
+	margin: 5px;
+	border: 3.5px solid #191970;
+	float: center;
+	width: 315px;
+	display: inline-table;
+}
+
+div.gallery3:hover {
+	border: 3.5px solid black;
+}
+
+div.gallery3 img {
+	width: 100%;
+	height: auto;
+}
+
+#Philippines9 {
+	background-image: linear-gradient(rgba(255,255,255,0.40),
+	rgba(255,255,255,0.40)), url("mindanao.jpg");
+	padding: 50px 100px 100px 100px;
+}
+
+#Philippines9 h1 {
+	background-color: #191970;
+	color: white;
+	padding: 10px;
+	text-align: center;
+}
+
+div.gallery3 {
+	margin: 5px;
+	border: 3.5px solid #191970;
+	float: center;
+	width: 315px;
+	display: inline-table;
+}
+
+div.gallery3:hover {
+	border: 3.5px solid black;
+}
+
+div.gallery3 img {
+	width: 100%;
+	height: auto;
+}
+
+.footer {
+	background-color: rgb(8,9,19);
+	text-align: left;
+	font-family: sans-serif;
+	font-weight: bold;
+	font-size: 16px;
+	height: 100%;
+	padding: 35px 50px 35px 50px;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	overflow: hidden;
+	margin: auto;
+}
+
+.footer .footer-left, .footer .footer-center, .footer .footer-right {
+	display: inline-block;
+	vertical-align: top;
+}
+/* footer left*/
+.footer .footer-left {
+	width: 25%;
+	padding-right: 10px;
+}
+
+.footer .icons {
+	margin-top: 25px;
+	text-align: center;
+}
+
+.footer .icons a {
+	display: inline-block;
+	width: 35px;
+	height: 35px;
+	cursor: pointer;
+	background-color: #33383b;
+	border-radius: 2px;
+	font-size: 20px;
+	color: #ffffff;
+	text-align: center;
+	line-height: 35px;
+	margin-right: 3px;
+	margin-bottom: 5px;
+}
+/* footer center*/
+.footer .footer-center {
+	width: 30%;
+}
+
+.footer .footer-center i {
+	background-color: #33383b;
+	color: #ffffff;
+	font-size: 25px;
+	width: 38px;
+	height: 38px;
+	border-radius: 50%;
+	text-align: center;
+	line-height: 42px;
+	margin: 10px 15px;
+	vertical-align: middle;
+}
+
+.footer .footer-center i.fa-envelope {
+	font-size: 17px;
+	line-height: 38px;
+}
+
+.footer .footer-center p {
+	display: inline-block;
+	color: #ffffff;
+	vertical-align: middle;
+	margin: 0;
+}
+
+.footer .footer-center p span {
+	display: block;
+	font-weight: normal;
+	font-size: 14px;
+	line-height: 2;
+}
+
+.footer .footer-center p a {
+	color: #0099ff;
+	text-decoration: none;
+}
+/* footer right*/
+.footer .footer-right {
+	width: 39.5%;
+}
+
+.footer h2 {
+	color: #ffffff;
+	font-size: 36px;
+	font-weight: normal;
+	margin: 0;
+}
+
+.footer h2 span {
+	color: #0099ff;
+}
+
+.footer .menu {
+	color: #ffffff;
+	margin: 20px 0 12px;
+	text-align: center;
+	padding: 0;
+}
+
+.footer .menu a {
+	display: inline-block;
+	line-height: 1.8;
+	text-decoration: none;
+	color: inherit;
+}
+
+.footer .menu a:hover {
+	color: #0099ff;
+}
+
+.footer .name {
+	color: #0099ff;
+	font-size: 14px;
+	font-weight: normal;
+	text-align: center;
+	margin: 0;
+}
+
+@media (max-width: 767px) {
+	.footer {
+		font-size: 14px;
+	}
+
+	.footer .footer-left, .footer .footer-center, .footer .footer-right {
+		display: block;
+		width: 100%;
+		margin-bottom: 40px;
+		text-align: center;
+	}
+
+	.footer .footer-center i {
+		margin-left: 0;
+	}
+}
